@@ -3,30 +3,30 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /*Inclui bordas e preencimento no tamanho total do elemento */
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Arial', sans-serif; /* Define a fonte padrão do corpo */
+    background-color: #f4f4f4;      /* Define a cor de fundo para branca */
+    color: #333;                    /* Define a cor do texto */
 }
 
 .site-header {
-    display: flex;
+    display: flex; /* Define um layout flexivel para o cabeçaho */
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Alinha  verticalmente todos os elementos ao centro */
     padding: 20px 40px;
-    background-color: #000;
-    color: #fff;
-    border-bottom: 2px solid #555;
+    background-color: #000; /* Fundo preto */
+    color: #fff;            /* Texto branco */
+    border-bottom: 2px solid #555; /* Cor para a borda inferior */
 }
 
 .logo h1 {
-    font-size: 28px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 5px;
+    font-size: 28px; /*Tamanho do logo */
+    font-weight: bold; /* Texto em negrito*/
+    text-transform: uppercase; /* Texto em maisculas */
+    margin-bottom: 5px; /* Espaçamento */
 }
 
 .logo .tagline {
@@ -36,90 +36,90 @@ body {
 }
 
 .nav-menu ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+    list-style: none; 
+    display: flex; /* Exibe itens na horizontal*/
+    gap: 20px; /* Espaçamento entre itens */
 }
 
 .nav-menu a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
+    text-decoration: none; /* Remove o sublinhado dos links*/
+    color: #fff;    /* links brancos */
+    font-size: 16px;  /* Tamanho do texto dos links*/
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /* Transição suave para a cor do link */
 }
 
 .nav-menu a:hover {
-    color: #f39c12;
+    color: #f39c12; /*Cor laranja ao passar o mouse*/
 }
 
 main {
-    max-width: 1200px;
-    margin: 20px auto;
+    max-width: 1200px; /*Largura maxima do conteudo principal*/
+    margin: 20px auto; /* Centraliza o conteudo na horizontal*/
     padding: 0 20px;
 }
 
 .welcome-message {
-    text-align: center;
-    margin-bottom: 40px;
+    text-align: center; /* Centraliza o Texto de Boas Vindas*/
+    margin-bottom: 40px; /* Espaço abaixo da mensagem */
 }
 
 .welcome-message h2 {
-    font-size: 28px;
-    color: #444;
+    font-size: 28px; /*Tamanho do titulo da mensaguem*/
+    color: #444; /*Cor cinza escuro */
 }
 
 .welcome-message p {
-    font-size: 20px;
+    font-size: 20px; /*Tamanho do texto do paragrafo*/
     color: #666;
-    margin-top: 10px;
+    margin-top: 10px; /* Espaço acima do paragrafo*/
 }
 
 .category-section {
-    margin-bottom: 40px;
+    margin-bottom: 40px; /*Espaçamento abaixo da seção de categorias*/
 }
 
 .category-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #444;
+    font-size: 24px; /* Tamanho do titulo da Categoria*/
+    font-weight: bold; /* Fonte Negrito*/
+    margin-bottom: 20px;/* Espaço embaixo do texto*/
+    color: #444; /* Cor do texto*/
 }
 
 .movie-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    display: grid; /* Layout para a grade de filmes*/
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Faz com que as colunas fiquem flexiveis conforme o espaço disponivel */
+    gap: 20px; /*Espaçamento entre os itens da grade*/
 }
 
 .movie-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff; /*Fundo branco para os cartazes*/
+    border-radius: 8px;       /* Bordas arredondadas*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*Sombra suave*/
+    overflow: hidden;                             /* Garante que o conteudo não passe os limites dos carazes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
 }
 
 .movie-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Aumenta o tamanho do poster quando passar o mouse */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
 }
 
 .movie-card img {
-    width: 100%;
-    height: auto;
+    width: 100%;  /* A imagem ocupa toda a largura do cartaz*/
+    height: auto; /* Mantém a proporção da imagem */
 }
 
 .movie-card h3 {
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px;
-    color: #222;
+    font-size: 18px; /* Tamanho do titulo do filme */
+    font-weight: bold; /* Titulo em Negrito */
+    padding: 10px;  /* Espaçamento interno */
+    color: #222; /* Define a cor para o titulo (preto) */
 }
 
 .movie-card p {
-    font-size: 14px;
-    padding: 0 10px 10px;
-    color: #555;
+    font-size: 14px; /* Tamanho do texto da descrição*/
+    padding: 0 10px 10px; /*Espaçamento interno */
+    color: #555; /*Cor do texto*/
 }
      
