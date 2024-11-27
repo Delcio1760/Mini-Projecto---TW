@@ -5,30 +5,30 @@
     box-sizing: border-box;
 }
 
-/* Corpo */
+/* Corpo da pagina */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #fff;
-    color: #000;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif; /* Define a fonte para a pagina */
+    background-color: #fff;        /* Define a cor da pagina para branca*/
+    color: #000;                   /* Define a cor do texto para preta */
+    line-height: 1.6;                /* Espaçamento entre linhas*/
 }
 
-/* Cabeçalho */
-.site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #000;
-    color: #fff;
-    border-bottom: 2px solid #555;
+/* Cabeçalho da pagina */
+.site-header {             /* Layout felxivel para alinhar elementos*/
+    display: flex;         
+    justify-content: space-between; /* Espaçamento entre logotipo e menu */
+    align-items: center;            /* Alinhamento vertical central */
+    padding: 20px 40px;             /* Espaçamento interno */
+    background-color: #000;       /* Fundo preto */
+    color: #fff;                  /* Texto branco */
+    border-bottom: 2px solid #555; /* Borda inferior cinzento*/
 }
 
 .logo h1 {
-    font-size: 28px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size: 28px;   /*Tamanho do logo central*/
+    font-weight: bold; /* Logo em negrito */
+    text-transform: uppercase; /*Texto em maisculas */
+    letter-spacing: 2px;       /* Espaçamento entre letras */
 }
 
 .logo .tagline {
@@ -38,17 +38,17 @@ body {
 }
 
 .nav-menu ul {
-    list-style: none;
-    display: flex;
+    list-style: none;  /* Remove os marcadores da lista */
+    display: flex;    /*Exibe itens em linha */
     gap: 20px;
 }
 
 .nav-menu a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
+    text-decoration: none;  /* Remove os sublinhados nos links*/
+    color: #fff;          /* Cor de texto no Menu*/  
+    font-size: 16px;        
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /*Efeito suave ao passar o mouse*/
 }
 
 .nav-menu a:hover {
@@ -57,70 +57,70 @@ body {
 
 /* Principal */
 main {
-    max-width: 900px;
-    margin: 20px auto;
+    max-width: 900px;   /* Limita a largura do conteudo*/
+    margin: 20px auto;  /* Centraliza o conteudo*/
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Cor de fundo*/
+    border-radius: 8px;       /* Bordas arrendondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 article img {
-    display: block;
-    margin: 20px auto;
-    width: 100%;
-    max-width: 600px;
-    border-radius: 8px;
+    display: block;     /*Imagem como bloco para centralização */
+    margin: 20px auto;  /* Centraliza a imagem */
+    width: 100%;        /* Limita a largura da imagem*/
+    max-width: 600px;   /* Largura maxima */
+    border-radius: 8px; /* Bordas aredondadas */
 }
 
 article h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    text-align: center;
+    font-size: 32px;    /* Tamanho do titulo principal */
+    margin-bottom: 20px; 
+    text-align: center;  /* Centraliza o titulo*/
 }
 
 article h2 {
-    font-size: 24px;
+    font-size: 24px;    
     margin: 20px 0 10px;
 }
 
 article p {
-    font-size: 18px;
-    text-align: justify;
-    margin-bottom: 20px;
+    font-size: 18px;  /* Tamanho do texto*/
+    text-align: justify; /* Justifica o texto*/
+    margin-bottom: 20px; /* Espaçamento abaixo do paragrafo*/
 }
 
 /* Imagens adicionais */
 .extra-image {
-    display: block;
-    margin: 20px auto;
-    width: 300%;
-    max-width: 500px;
-    border-radius: 8px;
+    display: block;      /* Imagem como bloco*/
+    margin: 20px auto;   /* Centraliza a imagem extra */
+    width: 300%;         
+    max-width: 500px;     /* Limita a largura*/
+    border-radius: 8px;   /*Bordas arredondadas*/
 }
   /* Seção de Comentarios */
   .comments-section{
-    margin-top: 40px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-top: 40px;     /* Espaço acima da seção*/
+    background-color: white; /* Fundo branco*/
+    padding: 20px;            /*Espaçamento interno*/
+    border-radius: 8px;       /*Bordas arredondadas*/
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave */
 }
 .comments-section h2, .comments-section h3{
     color: #444;
     margin-bottom: 15px;
 }
 #comment-form{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: flex;  /* Layout flexivel para empilhar os campos*/
+    flex-direction: column;  /* Campos empilhados verticalmente */
+    gap: 10px;              /* Espaços entre campso */
 }
 #comment-input{
-    width: 100%;
-    height: 80px;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 5px;
-    font-size: 14px;
+    width: 100%;                 /* Largura total do campo de entrada */
+    height: 80px;                /* Altura do Campo */
+    padding: 10px;               /* Espaçamento interno*/
+    border: 1px solid white;     /* Borda brança*/
+    border-radius: 5px;           /* Bordas arrendondadas*/
+    font-size: 14px;              /* Tamanho do texto */
 }
 
